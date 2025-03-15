@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meal Plan - UNCG Grub">
+    <title>Meal Plan - UNCG Grub</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Meal Plan</h1>
+        <p>Select dishes from our recommendations and build your meal plan for the day!</p>
+    </header>
+
+    <main class="meal-plan-container">
+        <section class="dishes-list">
+            <h2>Available Dishes</h2>
+            <ul id="dishes">
+                <li>Pizza - $10 <button onclick="addToMeal('Pizza', 10)">Add</button></li>
+                <li>Philly Cheesesteak - $8 <button onclick="addToMeal('Philly Cheesesteak', 8)">Add</button></li>
+                <li>Wings - $12 <button onclick="addToMeal('Wings', 12)">Add</button></li>
+                <li>Ramen Bowl - $9 <button onclick="addToMeal('Ramen Bowl', 9)">Add</button></li>
+                <li>Hibachi Bowl - $11 <button onclick="addToMeal('Hibachi Bowl', 11)">Add</button></li>
+                <li>Egg Rolls - $5 <button onclick="addToMeal('Egg Rolls', 5)">Add</button></li>
+                <li>Mango Cosmoberry Smoothie - $6 <button onclick="addToMeal('Mango Cosmoberry Smoothie', 6)">Add</button></li>
+                <li>Kiwi Quencher Smoothie - $5 <button onclick="addToMeal('Kiwi Quencher Smoothie', 5)">Add</button></li>
+                <li>Bahama Mama Smoothie - $5 <button onclick="addToMeal('Bahama Mama Smoothie', 5)">Add</button></li>
+            </ul>
+        </section>
+
+        <section class="meal-plan">
+            <h2>Your Meal Plan</h2>
+            <ul id="meal-plan"></ul>
+            <p>Total: $<span id="total">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 UNCG Grub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts/mealplan.js"></script>
+</body>
+</html>

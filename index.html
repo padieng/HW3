@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UNCG Grub - Foodie Recommendations Near Campus">
+    <title>UNCG Grub - Food Recommendations</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to UNCG Grub</h1>
+        <p>Are you a culinary adventurer in search of the perfect meal on campus? Look no further! We've curated a list of the most exceptional dishes that are sure to tantalize your taste buds. From fresh pizzas to mouthwatering hibachi, this list has got you covered. So, put on your foodie hat and let's dive into the delightful world of flavors near the Petty Building!</p>
+    </header>
+
+    <main>
+        <section class="restaurant" id="don-gala">
+            <h2>Don Gala</h2>
+            <p>Location: 1101 W Gate City Blvd #201, Greensboro, NC 27403 <br> Hours: 4pm-10pm <br> Specialty: Medium pizza and 6-piece wings for $18</p>
+            <div class="gallery">
+                <img src="images/don_gala_pizza.jpg" alt="Pizza" onclick="showDishDetails('Pizza', '$10')">
+                <img src="images/don_gala_philly.jpg" alt="Philly Cheesesteak" onclick="showDishDetails('Philly Cheesesteak', '$8')">
+                <img src="images/don_gala_wings.jpg" alt="Wings" onclick="showDishDetails('Wings', '$12')">
+            </div>
+        </section>
+
+        <section class="restaurant" id="happy-bowl">
+            <h2>Happy Bowl</h2>
+            <p>Location: 1201 W Gate City Blvd #102, Greensboro, NC 27403 <br> Hours: 11am-9:30pm <br> Specialty: Large ramen bowls</p>
+            <div class="gallery">
+                <img src="images/happy_bowl_ramen.jpg" alt="Ramen Bowl" onclick="showDishDetails('Ramen Bowl', '$9')">
+                <img src="images/happy_bowl_hibachi.jpg" alt="Hibachi Bowl" onclick="showDishDetails('Hibachi Bowl', '$11')">
+                <img src="images/happy_bowl_egg_roll.jpg" alt="Egg Rolls" onclick="showDishDetails('Egg Rolls', '$5')">
+            </div>
+        </section>
+
+        <section class="restaurant" id="tropical-smoothie">
+            <h2>Tropical Smoothie</h2>
+            <p>Location: 1201 W Gate City Blvd, Greensboro, NC 27403 <br> Hours: 7am-9pm <br> Specialty: Free smoothies with completed surveys</p>
+            <div class="gallery">
+                <img src="images/tropical_smoothie_mango.jpg" alt="Mango Cosmoberry Smoothie" onclick="showDishDetails('Mango Cosmoberry Smoothie', '$6')">
+                <img src="images/tropical_smoothie_kiwi.jpg" alt="Kiwi Quencher Smoothie" onclick="showDishDetails('Kiwi Quencher Smoothie', '$5')">
+                <img src="images/tropical_smoothie_bahama.jpg" alt="Bahama Mama" onclick="showDishDetails('Bahama Mama Smoothie', '$5')">
+            </div>
+        </section>
+
+        <section id="dish-details">
+            <h3 id="selected-dish-name"></h3>
+            <p id="selected-dish-price"></p>
+        </section>
+
+        <aside>
+            <a href="mealplan.html">Create Your Meal Plan</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2025 UNCG Grub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
